@@ -15,3 +15,29 @@ currencies.forEach((currency) => {
     option.text = currency;
     toDropDown.addEventListener(option);
 })
+
+from.value = "UDS";
+toDropDown.value = "AFN";
+
+let convertCurrency = () => {
+    const amount = document.querySelector("#amount").value;
+    const fromCurrency = from.value;
+    const toCurrency = toDropDown.value;
+
+    if (amount.length !== 0){
+        fetch(api)
+            .then((resp) => resp.json())
+            .then((data) => {
+                let fromExchangeRate = data.convertion_rates[fromCurrency];
+                const convertedAmount = (amount / fromExchangeRate) * toExchangeRate;
+                result.innerHTML = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`
+            }) 
+    } else {
+        alert("Please fill in the amount")
+    }
+};
+
+document
+        .querySelector("#convert-button")
+        .addEventListener("click", convertCurrency);
+window.addEventListener("load", convertCurrency);        

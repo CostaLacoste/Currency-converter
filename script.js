@@ -1,4 +1,4 @@
-let api = `https://v6.exchangerate-api.com/v6/ed6f332df4403b9200a1285c/latest/USD`;
+const api = `https://v6.exchangerate-api.com/v6/ed6f332df4403b9200a1285c/latest/USD`;
 const fromDropDown = document.getElementById("from");
 const toDropDown = document.getElementById("to");
 
@@ -16,7 +16,7 @@ currencies.forEach((currency) => {
     toDropDown.addEventListener(option);
 })
 
-from.value = "UDS";
+from.value = "USD";
 toDropDown.value = "AFN";
 
 let convertCurrency = () => {

@@ -2,4 +2,4 @@
 
 Конвентер запускается кнопкой "Convert". По умолчанию стоит перевод долларов в афгани. Валюту можно изменить с помощью выпадающих меню.
 
-[Демонстрация работы конвентера](https://github.com/CostaLacoste/Currency-converter/issues/1#issue-3842695095)
+[Демонстрация работы конвентера](https://github.com/CostaLacoste/Currency-converter/issues/2#issue-3843277171)

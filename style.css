@@ -45,8 +45,8 @@ input#amount{
     padding: 0.5em;
 }
 input#amount:focus{
-    color: #9873fe;
-    border-color: #9873fe;
+    color: rgb(50, 155, 132);
+    border-color: rgb(50, 155, 132);
 }
 .dropdowns{
     display: flex;
@@ -62,7 +62,7 @@ select{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-color: #9873fe;
+    background-color: rgb(50, 155, 132);
     color: white;
 }
 select option{
@@ -72,7 +72,7 @@ select option{
 button{
     font-size: 1em;
     width: 100%;
-    background-color: #9873fe;
+    background-color: rgb(50, 155, 132);
     padding: 1em 0;
     margin-top: 2em;
     border-radius: 0.3em;
